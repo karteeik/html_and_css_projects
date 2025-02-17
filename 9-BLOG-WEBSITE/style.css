@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: capitalize;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+nav {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.componant ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.componant ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    border-bottom: 2px solid black; /* Highlight color on hover */
+  }
+}
+
+#home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  gap: 30px;
+}
+.content h1{
+  font-size: 60px;
+}
+.pic img{
+  border-radius: 10px;
+  width: 100%;
+  &:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.03);
+  }
+}
+
+section{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 40px;
+  border: 2px solid;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 1px black;
+}
+section img{
+  width: 100%;
+}
+section .content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.art{
+  display: flex;
+  justify-content: space-between;
+}
+.art a{
+  color: black;
+  text-decoration: none;
+  padding: 2px 10px;
+  background-color: gainsboro;
+  font-weight: 600;
+
+  &:hover{
+    color: gray;
+  }
+}
+
+.cards{
+  display: flex;
+  gap: 30px;
+  margin: 40px;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 1px 1px 3px 1px black;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer{
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.post-img{
+  margin: 0px 30px;
+}
+.post-img img{
+  width: 100%;
+}
+.post-content h3{
+  display: inline;
+  padding-right: 10px;
+}
+.post-img p{
+  margin: 30px 0px;
+}
+hr{
+  margin: 30px 0px 0px 0px;
+}
+@media (max-width: 786px){
+  #home{
+    flex-direction: column;
+  }
+  section{
+    flex-direction: column;
+  }
+  .cards{
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html,body{
+    min-height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: rgb(104, 68, 137);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo h1{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        border-bottom: 2px solid;
+    }
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+    background-color: rgb(104, 68, 137);
+}
+.photo img{
+    height: 450px;
+    width: 100%;
+    border-radius: 50%;
+}
+.photo_content h1{
+    font-size: 3rem;
+}
+.photo_content p{
+    text-transform: lowercase;
+    font-size: 30px;
+    display: inline;
+}
+.photo_content span{
+    color: rgb(31, 39, 15);
+}
+#project{
+    background-color: rgb(104, 68, 137);
+}
+#project h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 36px;
+    font-weight: 800;
+}
+.container{
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    transition: 0.8s ease-in;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+.card img{
+    &:hover{
+    transition: 0.3s ease-in;
+    opacity: 0.7;
+    }
+}
+.card a{
+    padding: 20px;
+    text-align: center;
+    color: rgb(173, 173, 206);
+    text-decoration: none;
+    background-color: rgb(25, 25, 48);
+}
+footer{
+    background-color: rgb(104, 68, 137);
+    min-height: 200px;
+    text-align: center;
+    padding: 30px;
+}
+footer .iteams{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+.iteam h3{
+    display: inline-block;
+}
+footer h2{
+    padding: 5px;
+    border-top: 2px solid;
+}
+
+@media (max-width:786px){
+    main{
+        flex-direction: column;
+    }
+    footer .iteams{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
